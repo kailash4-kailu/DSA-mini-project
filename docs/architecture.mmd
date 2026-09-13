@@ -1,0 +1,46 @@
+```mermaid
+graph TD
+    subgraph "Layer 1: Data Source"
+        A[("📊 IoT Sensor<br/>Data Generator")] --> B[("📄 sensor_data.csv<br/>5000 records")]
+    end
+
+    subgraph "Layer 2: Streaming Tool"
+        B --> C["🔄 Kafka Producer<br/>(kafka/producer.py)"]
+        C -->|"JSON events<br/>configurable delay"| D{{"📡 Kafka Topic<br/>iot-sensor-events"}}
+    end
+
+    subgraph "Layer 3: Stream Processor"
+        D --> E["⚙️ Stream Processor<br/>(processor/stream_processor.py)"]
+        E --> F["📐 Sliding Window<br/>(collections.deque)"]
+        E --> G["📈 Running Statistics<br/>(O(1) updates)"]
+        E --> H["🏔️ Heap Tracker<br/>(heapq top-N)"]
+        E --> I["🔍 Dict/HashMap<br/>(device state)"]
+    end
+
+    subgraph "Layer 4: ML Algorithm"
+        E --> J["🤖 Isolation Forest<br/>(scikit-learn)"]
+        J -->|"anomaly_score<br/>is_anomaly"| E
+    end
+
+    subgraph "Layer 5: Database"
+        E -->|"INSERT"| K[("🗄️ MySQL<br/>sensor_readings")]
+        E -->|"UPSERT"| L[("🗄️ MySQL<br/>sensor_metrics")]
+    end
+
+    subgraph "Layer 6: Visualization"
+        K --> M["📊 Streamlit Dashboard<br/>(auto-refresh)"]
+        L --> M
+        M --> N["📉 Plotly Charts"]
+        M --> O["🎯 KPI Cards"]
+        M --> P["🚨 Anomaly Viz"]
+        M --> Q["📋 Data Tables"]
+    end
+
+    style A fill:#4CAF50,color:white
+    style D fill:#FF9800,color:white
+    style E fill:#2196F3,color:white
+    style J fill:#9C27B0,color:white
+    style K fill:#607D8B,color:white
+    style L fill:#607D8B,color:white
+    style M fill:#F44336,color:white
+```

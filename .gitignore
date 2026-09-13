@@ -1,0 +1,32 @@
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Model artifacts
+models/*.pkl
+
+# Data (can be regenerated)
+data/sensor_data.csv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Docker volumes
+mysql_data/
+kafka_data/
+zookeeper_data/
+
+# Testing & Cache
+.pytest_cache/

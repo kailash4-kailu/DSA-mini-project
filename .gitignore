@@ -1,32 +1,42 @@
-# Environment
+# Environment & Secrets
 .env
+.env.local
+.env.*.local
+
+# Python Virtual Environments
 venv/
+.venv/
+env/
+ENV/
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-
-# Model artifacts
-models/*.pkl
-
-# Data (can be regenerated)
-data/sensor_data.csv
-
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-logs/
-
-# Docker volumes
-mysql_data/
-kafka_data/
-zookeeper_data/
+*.py[cod]
+*$py.class
 
 # Testing & Cache
 .pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & Temporary Files
+*.log
+logs/
+tmp/
+scratch/
+
+# Docker volumes & data directories
+mysql_data/
+kafka_data/
+zookeeper_data/

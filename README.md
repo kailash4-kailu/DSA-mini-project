@@ -204,11 +204,11 @@ DSA-mini-project/
 │   └── reset_database.py              # Database reset utility
 │
 └── docs/
-    ├── DSA_Mini_Project_Report.pdf    # Complete academic project report (15 pages)
+    ├── DSA_Mini_Project_Report.pdf        # Complete academic project report (15 pages)
     ├── DSA_Mini_Project_Presentation.pptx # Project presentation slides (12 slides)
-    ├── demo_script.md                 # Step-by-step viva demonstration script
-    ├── architecture.png               # System architecture diagram
-    └── architecture.mmd               # Mermaid source architecture diagram
+    ├── PROJECT_TECHNICAL_HANDOVER.md      # Comprehensive technical handover & viva guide
+    ├── architecture.png                   # System architecture diagram
+    └── architecture.mmd                   # Mermaid source architecture diagram
 ```
 
 ---
@@ -284,5 +284,5 @@ Comprehensive documentation is available in the `docs/` folder:
 
 - **Academic Project Report (PDF)**: [docs/DSA_Mini_Project_Report.pdf](docs/DSA_Mini_Project_Report.pdf) *(15 pages)*
 - **Presentation Slides (PowerPoint)**: [docs/DSA_Mini_Project_Presentation.pptx](docs/DSA_Mini_Project_Presentation.pptx) *(12 slides)*
-- **Viva Demonstration Script**: [docs/demo_script.md](docs/demo_script.md)
+- **Technical Handover & Viva Guide**: [docs/PROJECT_TECHNICAL_HANDOVER.md](docs/PROJECT_TECHNICAL_HANDOVER.md) *(Architecture, viva Q&A, and demo walkthrough)*
 - **Architecture Diagram**: [docs/architecture.png](docs/architecture.png)

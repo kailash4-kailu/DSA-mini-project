@@ -31,7 +31,7 @@ The repository contains 31 active code and configuration files organized into fu
 
 ### Directory Structure
 ```
-c:\Users\Acer\Desktop\dsa\
+DSA-mini-project/
 ├── .env                              # Active environment variable definitions
 ├── .env.example                      # Template environment configuration
 ├── .gitignore                        # Git ignore specifications
@@ -50,13 +50,9 @@ c:\Users\Acer\Desktop\dsa\
 ├── docs/
 │   ├── architecture.mmd              # Mermaid diagram of the 6-layer architecture
 │   ├── architecture.png              # High-resolution rendered architecture diagram
-│   ├── compliance_audit.md           # Assignment compliance audit report
-│   ├── demo_script.md                # 5-minute live demonstration walk-through script
-│   ├── DSA_Mini_Project_Presentation.ppt # Legacy presentation binary
 │   ├── DSA_Mini_Project_Presentation.pptx# Presentation slide deck (12 slides)
 │   ├── DSA_Mini_Project_Report.pdf   # 15-page academic project report
-│   ├── presentation.md               # Markdown source of presentation slides
-│   └── report.md                     # Comprehensive academic report source
+│   └── PROJECT_TECHNICAL_HANDOVER.md # Comprehensive technical handover & viva guide
 ├── kafka/
 │   ├── __init__.py                   # Package marker
 │   ├── consumer_config.py            # Kafka consumer configuration settings
@@ -74,8 +70,6 @@ c:\Users\Acer\Desktop\dsa\
 │   ├── stream_processor.py           # Core streaming consumer pipeline orchestrator
 │   └── window_manager.py             # Deque-based sliding window state manager
 ├── scripts/
-│   ├── generate_pdf_report.py        # ReportLab compiler for 15-page academic PDF report
-│   ├── generate_pptx_presentation.py # python-pptx compiler for presentation slide deck
 │   ├── reset_database.py             # Database drop and recreate utility
 │   ├── setup.py                      # Automated setup script (data gen, DB reset, ML train)
 │   └── start_pipeline.py             # Multiprocess pipeline launcher

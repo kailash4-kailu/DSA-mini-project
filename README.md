@@ -2,14 +2,15 @@
 
 ## Data Stream Analytics — DSA Mini Project
 
-### Group 3
+### Group 16
 
 | USN | Name |
 |---|---|
-| 23BTRCL227 | P CHETHAN |
-| 23BTRCL217 | MUKKAMALLA LOKESHWAR REDDY |
-| 23BTRCL221 | NADAKUDURU SRINIVAS |
-| 23BTRCL233 | SOMISETTY JAGANNADA KAILASH |
+| 23BTRCL223 | N Charan Naidu |
+| 23BTRCL259 | Pasupuleti Rahul |
+| 23BTRCL218 | Muthuluru Pruthviraj |
+| 23BTRCL210 | Manas Mishra |
+| 23BTRCL009 | Pesala Siva Vardhan Reddy|
 
 ### Submitted To
 
